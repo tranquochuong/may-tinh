@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>Caculartor</h2>
+</head>
+<body>
+    
+            <input type="number" id="giatri1" placeholder="Nhập giá trị 1"> 
+            <input type="number" id="giatri2" placeholder="Nhập giá trị 2"> 
+    <br>  
+        <button onmouseout="Add()">Addition(+)</button>
+        <button onclick="Sub()">Subtracion(-)</button>
+        <button onclick="Mul()">Multiption(*)</button>
+        <button onclick="Divi()">Division(/)</button> 
+        <h3>Result:</h3>
+        <div id="result">Hiện kết quả</div>
+
+</body>
+</html>
+     
+     <script>
+        function Add()
+        {
+            let number1 = document.getElementById("giatri1").value;
+            let number2 = document.getElementById("giatri2").value;
+            let result = Number(number1 ) + Number(number2); 
+        document.getElementById("result").innerHTML = result;
+        }
+        function Sub(){
+            let number1 = document.getElementById("giatri1").value;
+            let number2 = document.getElementById("giatri2").value;
+            let result = Number(number1) - Number(number2); 
+        document.getElementById("result").innerHTML = result;
+        }
+        function Mul(){
+            let number1 = document.getElementById("giatri1").value;
+            let number2 = document.getElementById("giatri2").value;
+            let result = Number(number1 ) * Number(number2); 
+        document.getElementById("result").innerHTML = result;
+        }
+        function Divi()
+        {
+            let number1 = document.getElementById("giatri1").value;
+            let number2 = document.getElementById("giatri2").value;
+            let result = Number(number1 ) / Number(number2); 
+        document.getElementById("result").innerHTML = result;
+        }
+    </script>
