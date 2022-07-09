@@ -8,20 +8,52 @@
     <h2>Caculartor</h2>
 </head>
 <body>
-    
+
             <input type="number" id="giatri1" placeholder="Nhập giá trị 1"> 
             <input type="number" id="giatri2" placeholder="Nhập giá trị 2"> 
     <br>  
-        <button onmouseout="Add()">Addition(+)</button>
-        <button onclick="Sub()">Subtracion(-)</button>
-        <button onclick="Mul()">Multiption(*)</button>
-        <button onclick="Divi()">Division(/)</button> 
+        <button onmouseout="Rad()">Rad</button>
+        <button onclick="0000()">0000</button>
+        <button onclick="text1()">x!</button>
+        <button onclick="text2()">&#40;</button>
+        <button onmouseout="text3()">&#41;</button>
+        <button onclick="Text4()">&#868;</button>
+        <button onclick="AC()">AC</button>
+    <br>
+        <button onclick="Inv()">Inv</button>
+        <button onmouseout="sin()">sin</button>
+        <button onclick="In()">In</button>
+        <button onclick="text5()">&#55;</button>
+        <button onclick="text6()">&#56;</button>
+        <button onmouseout="Text7()">&#57;</button>
+        <button onclick="Divi()">&divide;</button>
+    <br>
+        <button onclick="Pi()">&#8851;</button>
+        <button onclick="cos()">cos</button>
+        <button onmouseout="Log()">Log</button>
+        <button onclick="text8()">&#52;</button>
+        <button onclick="text9()">&#53;</button>
+        <button onclick="text10()">&#54;</button>
+        <button onmouseout="Mul()">&times;</button>
+    <br>
+        <button onclick="text11()">&#868;</button>
+        <button onclick="text12()">tan</button>
+        <button onmouseout="text13()">&#8730;</button>
+        <button onclick="text14()">&#49;</button>
+        <button onclick="text13()">&#50;    </button>
+        <button onclick="text14()">&#51;</button>
+        <button onmouseout="sub()">&#8722;</button>
+    <br>
+        <button onclick="text15()">Ans</button>
+        <button onclick="Text16()">EXP</button>
+        <button onclick="text17()">xmuy</button> 
+        <button onmouseout="text18()">&#48;</button>
+        <button onclick="text19()">.</button>
+        <button onclick="text20()">&#61;</button>
+        <button onclick="Add()">&#43;</button>
+         <br>
         <h3>Result:</h3>
         <div id="result">Hiện kết quả</div>
-
-</body>
-</html>
-     
      <script>
         function Add()
         {
@@ -50,3 +82,6 @@
         document.getElementById("result").innerHTML = result;
         }
     </script>
+</body>
+</html>
+     
